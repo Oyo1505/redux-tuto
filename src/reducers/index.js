@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import succes from './succesReducers';
+import posts from './posts/reducer';
 
 export default combineReducers({
-	succes
+	posts
 })
