@@ -3,11 +3,6 @@ import PropTypes from 'prop-types';
 
 class Headline extends React.Component {
 
-	constructor(props){
-		super(props)
-
-	}
-
 	render() {
 		const {header, desc} = this.props
 
