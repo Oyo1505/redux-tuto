@@ -37,6 +37,23 @@ describe('App Component', ()=> {
 		const component = findByTestAttr(wrapper, 'appComponent');
 
 		expect(component.length).toBe(1);
-	})
+	});
+
+	it('exampleMethode_updatesState, should upadte state as expected ',()=> {
+
+		const classInstance = wrapper.instance();
+		classInstance.exampleMethode_updatesState();
+		const newState = classInstance.state.hideBtn;
+		expect(newState).toBe(true);
+	});
+
+	it('exampleMethode_returnaValue should return a value as expected', ()=> {
+		const classInstance = wrapper.instance();
+		const newValue = classInstance.exampleMethode_returnaValue(6);
+		expect(newValue).toBe(7);
+
+
+
+	})	
 
 }) 
